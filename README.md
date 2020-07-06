@@ -20,7 +20,7 @@ Word Embedding:
 An embedding layer will try to find some relation between various words. We are looking to find an embedding for 10,000 words, and we are trying to learn 16 features from those words. Then, all the words are represented as these feature vectors. The embedding layer will learn a 10000 by 16 dimensional Word Embedding where each word has a feature representation of 16 values.
 
 Creating and Training the Model: 
-I used the sequential class from Keras. And I also imported a few layers were needed. We know, I needed an Embedding layer (used 16 dimension for the feature representations), needed a pooling layer which converted feature representations of 10,000 by 16 to a 16 dimension vector for each batch that was fed into a Dense layer with a rectified linear unit activation. Finally.Another dense layer with 'sigmoid' activation function to gives a binary classification output for the two classes. number of Epochs was set to 20.
+I used the sequential class from Keras. I also imported a few layers that were needed. We know, I needed an Embedding layer (used 16 dimension for the feature representations), needed a pooling layer which converted feature representations of 10,000 by 16 to a 16 dimension vector for each batch that was fed into a Dense layer with a rectified linear unit activation. Finally.Another dense layer with 'sigmoid' activation function to gives a binary classification output for the two classes. number of Epochs was set to 20.
 
 Prediction and Evaluation:
 We split the training set into sets; training set and validation set (20%) . Display the accuracy of our model during training for both the training and the validation set.
